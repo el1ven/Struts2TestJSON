@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <!--注意package继承自json-default,result的type为json-->
+    <package name="jsonAction" namespace="/" extends="json-default">
+        <action name="jsonValidate" class="JsonAction">
+            <result name="success" type="json"/>
+        </action>
+    </package>
+</struts>
